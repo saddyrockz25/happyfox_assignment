@@ -1,0 +1,58 @@
+{
+    "rule1": {
+        "all": [
+            {
+                "field": "from",
+                "predicate": "contains",
+                "value": "SWIFF@lightfilmfest.org"
+            },
+            {
+                "field": "subject",
+                "predicate": "contains",
+                "value": "SWIFF"
+            },
+            {
+                "field": "message",
+                "predicate": "contains",
+                "value": "Congratulations"
+            },
+            {
+                "field": "date_received",
+                "predicate": "greater_than",
+                "value": "10 days"
+            }
+        ],
+        "actions": {
+            "move_message_to": "inbox",
+            "mark_message_as": "unread"
+        }
+    },
+    "rule2": {
+        "any": [
+            {
+                "field": "from",
+                "predicate": "contains",
+                "value": "thanimahomestay@gmail.com"
+            },
+            {
+                "field": "subject",
+                "predicate": "contains",
+                "value": "HappyFox"
+            },
+            {
+                "field": "message",
+                "predicate": "contains",
+                "value": "investor"
+            },
+            {
+                "field": "date_received",
+                "predicate": "less_than",
+                "value": "1 days"
+            }
+        ],
+        "actions": {
+            "move_message_to": "inbox",
+            "mark_message_as": "unread"
+        }
+    }
+}

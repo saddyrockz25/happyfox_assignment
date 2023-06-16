@@ -1,0 +1,11 @@
+Steps to run this project.
+
+1. Replace client_id and client_secret attributes in client_secret.json with the respective values
+of your Google Cloud Project
+2. For details of creating a Google Cloud Project and providing access to your project to read and modify mails from
+your Gmail account follow this - https://developers.google.com/gmail/api/quickstart/python
+3. Replace values in config.json with the database details of your local postgres server
+4. Create a python3 virtual environment using the command - python3 -m venv <name>
+5. Activate the virtual environment
+6. Install all the packages mentioned in requirements.txt
+7. Run the main function present in main.py
